@@ -92,54 +92,62 @@
         </div>
     </header>
 
-    <!-- Секция "Биография" -->
-    <section id="biography" class="bg-light-green pt-16 md:pt-20 pb-12 md:pb-16 animate-fade-in">
-        <div class="px-4 md:px-8 lg:px-16 xl:px-32 max-w-7xl mx-auto">
-            <h2 class="font-bold text-2xl md:text-4xl mb-8 md:mb-12 text-gray-900">Биография</h2>
-            
-            <div class="flex flex-col lg:flex-row gap-8 md:gap-12 items-center">
-                <!-- Фото Кристины -->
-                <div class="w-full lg:w-1/2">
-                    <div class="rounded-2xl overflow-hidden shadow-soft hover-scale">
-                        <img src="assets/Images/Image.png" 
-                             alt="Кристина" 
-                             class="img-cover w-full h-64 md:h-80 lg:h-96">
-                    </div>
+   <!-- Секция "Биография" -->
+<section id="biography" class="bg-light-green pt-16 md:pt-20 pb-12 md:pb-16 animate-fade-in">
+    <div class="px-4 md:px-8 lg:px-16 xl:px-32 max-w-7xl mx-auto">
+        <h2 class="font-bold text-2xl md:text-4xl mb-8 md:mb-12 text-gray-900">Биография</h2>
+        
+        <div class="flex flex-col lg:flex-row gap-8 md:gap-12">
+            <!-- Фото Кристины - высота 429px -->
+            <div class="w-full lg:w-1/2">
+                <div class="rounded-2xl overflow-hidden shadow-soft hover-scale h-[429px]">
+                    <img src="assets/Images/Image.png" 
+                         alt="Кристина" 
+                         class="img-cover w-full h-full">
                 </div>
-                
-                <!-- Текст биографии -->
-                <div class="w-full lg:w-1/2">
-                    <h3 class="font-bold text-xl md:text-3xl mb-4 md:mb-6 text-gray-900">Вступление</h3>
-                    <div class="space-y-3 md:space-y-4 text-base md:text-lg text-gray-700">
+            </div>
+            
+            <!-- Текст биографии - тоже высота 429px с внутренними отступами -->
+            <div class="w-full lg:w-1/2 h-[429px] flex flex-col justify-center">
+                <div class="py-4 md:py-6">
+                    <h3 class="font-bold text-xl md:text-2xl mb-4 text-gray-900">Вступление</h3>
+                    <div class="space-y-3 md:space-y-4 text-base md:text-lg text-gray-700 mb-6 md:mb-8">
                         <p>Родилась 6 декабря 2003 года. Провела детство в небольшом городке под названием Гурьевск. Училась в МАОУ СОШ № 11 и ДШИ № 22.</p>
                         <p>В 2021 познакомилась с Михаилом К., с которым состоит в отношениях. После окончания 11 классов переехала в Барнаул для дальнейшего обучения.</p>
                         <p>Сначала поступила в архитектурный колледж, но затем решила продолжить учиться в педагогическом университете. Сейчас обучается на 4 курсе АлтГПУ (бывш. АлтГПА, БГПУ).</p>
                     </div>
                     
                     <!-- Блок с иконками -->
-                    <div class="flex flex-wrap gap-4 md:gap-6 mt-6 md:mt-8">
-                        <div class="flex items-center gap-2 md:gap-3 bg-white px-4 py-3 rounded-lg shadow-soft hover-scale">
-                            <img src="assets/Icons/calendar.svg" alt="Возраст" class="icon">
-                            <span class="text-gray-700 font-medium">22 года</span>
+                    <div class="flex flex-wrap gap-6 md:gap-8">
+                        <div class="flex items-center gap-3 md:gap-4 group cursor-pointer transition-all duration-300">
+                            <img src="assets/Icons/calendar.svg" 
+                                 alt="Возраст" 
+                                 class="icon transition-all duration-300 opacity-55 group-hover:opacity-100">
+                            <span class="text-gray-700 font-medium transition-all duration-300 opacity-55 group-hover:opacity-100 group-hover:text-gray-900">22 года</span>
                         </div>
-                        <div class="flex items-center gap-2 md:gap-3 bg-white px-4 py-3 rounded-lg shadow-soft hover-scale">
-                            <img src="assets/Icons/location.svg" alt="Местоположение" class="icon">
-                            <span class="text-gray-700 font-medium">Барнаул</span>
+                        <div class="flex items-center gap-3 md:gap-4 group cursor-pointer transition-all duration-300">
+                            <img src="assets/Icons/location.svg" 
+                                 alt="Местоположение" 
+                                 class="icon transition-all duration-300 opacity-55 group-hover:opacity-100">
+                            <span class="text-gray-700 font-medium transition-all duration-300 opacity-55 group-hover:opacity-100 group-hover:text-gray-900">Барнаул</span>
                         </div>
-                        <div class="flex items-center gap-2 md:gap-3 bg-white px-4 py-3 rounded-lg shadow-soft hover-scale">
-                            <img src="assets/Icons/school.svg" alt="Образование" class="icon">
-                            <span class="text-gray-700 font-medium">АлтГПУ</span>
+                        <div class="flex items-center gap-3 md:gap-4 group cursor-pointer transition-all duration-300">
+                            <img src="assets/Icons/school.svg" 
+                                 alt="Образование" 
+                                 class="icon transition-all duration-300 opacity-55 group-hover:opacity-100">
+                            <span class="text-gray-700 font-medium transition-all duration-300 opacity-55 group-hover:opacity-100 group-hover:text-gray-900">АлтГПУ</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
     
-    <!-- Секция "Интересы и хобби" -->
+   <!-- Секция "Интересы и хобби" -->
 <section id="interests" class="py-12 md:py-20 animate-fade-in">
     <div class="px-4 md:px-8 lg:px-16 xl:px-32 max-w-7xl mx-auto">
-        <!-- Заголовок и описание - теперь по левому краю -->
+        <!-- Заголовок и описание -->
         <div class="mb-8 md:mb-12 text-left">
             <h2 class="font-bold text-2xl md:text-4xl mb-4 md:mb-6 text-gray-900">Интересы и хобби</h2>
             
@@ -148,61 +156,27 @@
                     Любит проводить свободное время за чтением манги и просмотром аниме. 
                     Ей нравится монтировать видео и редактировать изображения друзей и родственников 
                     на дни рождения или другие праздники. Подготавливаясь к урокам в школе, 
-                    много времени уделяет презентациям и другим элементам урока.
+                    много времени уделяет презентации и другие элементы урока.
                 </p>
             </div>
         </div>
         
-        <!-- Галерея интересов -->
+        <!-- Три фото без контейнеров, теней и лишних элементов -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            <!-- Хобби 1 -->
-            <div class="hobby-card shadow-soft hover-scale">
-                <img src="assets/Images/Image 1.png" 
-                     alt="Хобби 1" 
-                     class="img-cover h-64 md:h-80 w-full">
-                <div class="hobby-overlay">
-                    <h3 class="font-bold text-xl mb-2">Чтение манги</h3>
-                    <p class="text-sm opacity-90">Любит японские комиксы и графические романы</p>
-                </div>
-            </div>
+            <!-- Фото 1 -->
+            <img src="assets/Images/Image 1.png" 
+                 alt="Чтение манги" 
+                 class="w-full h-64 md:h-80 object-cover rounded-lg hover:scale-105 transition-transform duration-300">
             
-            <!-- Хобби 2 -->
-            <div class="hobby-card shadow-soft hover-scale">
-                <img src="assets/Images/Image 2.png" 
-                     alt="Хобби 2" 
-                     class="img-cover h-64 md:h-80 w-full">
-                <div class="hobby-overlay">
-                    <h3 class="font-bold text-xl mb-2">Монтаж видео</h3>
-                    <p class="text-sm opacity-90">Создание видеороликов для друзей и семьи</p>
-                </div>
-            </div>
+            <!-- Фото 2 -->
+            <img src="assets/Images/Image 2.png" 
+                 alt="Монтаж видео" 
+                 class="w-full h-64 md:h-80 object-cover rounded-lg hover:scale-105 transition-transform duration-300">
             
-            <!-- Хобби 3 -->
-            <div class="hobby-card shadow-soft hover-scale">
-                <img src="assets/Images/Image 3.png" 
-                     alt="Хобби 3" 
-                     class="img-cover h-64 md:h-80 w-full">
-                <div class="hobby-overlay">
-                    <h3 class="font-bold text-xl mb-2">Подготовка уроков</h3>
-                    <p class="text-sm opacity-90">Создание презентаций и учебных материалов</p>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Описание под фото -->
-        <div class="mt-8 md:mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            <div class="text-left p-4">
-                <h4 class="font-bold text-lg mb-2 text-green-700">Манга и аниме</h4>
-                <p class="text-gray-600">Увлекается японской культурой, читает мангу и смотрит аниме в свободное время</p>
-            </div>
-            <div class="text-left p-4">
-                <h4 class="font-bold text-lg mb-2 text-green-700">Видеомонтаж</h4>
-                <p class="text-gray-600">Создаёт памятные видео для близких, монтируя семейные праздники и события</p>
-            </div>
-            <div class="text-left p-4">
-                <h4 class="font-bold text-lg mb-2 text-green-700">Преподавание</h4>
-                <p class="text-gray-600">Тщательно готовится к урокам, создавая интересные презентации и материалы</p>
-            </div>
+            <!-- Фото 3 -->
+            <img src="assets/Images/Image 3.png" 
+                 alt="Подготовка уроков" 
+                 class="w-full h-64 md:h-80 object-cover rounded-lg hover:scale-105 transition-transform duration-300">
         </div>
     </div>
 </section>
@@ -429,5 +403,6 @@
 </body>
 
 </html>
+
 
 
